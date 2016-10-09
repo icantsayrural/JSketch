@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.joanne.jsketch.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/image"
+                android:text="import"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <ImageButton
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/select"/>
+
+            <ImageButton
+                android:id="@+id/eraser"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/eraser"/>
+
+            <ImageButton
+                android:id="@+id/rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/square"/>
+
+            <ImageButton
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/circle"/>
+
+            <ImageButton
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/line"/>
+
+            <ImageButton
+                android:id="@+id/paint"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/image"
+                android:layout_gravity="center"
+                android:src="@drawable/paint"/>
+
+            <Button
+                android:id="@+id/orange"
+                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/orange"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <Button
+                android:id="@+id/green"
+                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/green"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <Button
+                android:id="@+id/red"
+                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/red"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/th1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:src="@drawable/ic_th1"/>
+
+                <ImageButton
+                    android:id="@+id/th2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:src="@drawable/ic_th2"/>
+
+                <ImageButton
+                    android:id="@+id/th3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:src="@drawable/ic_th3"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.example.joanne.jsketch.JCanvas
+        android:id="@+id/canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </com.example.joanne.jsketch.JCanvas>
+
+</LinearLayout>
